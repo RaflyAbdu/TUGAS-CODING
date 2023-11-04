@@ -68,3 +68,116 @@ System.out.println(i + " adalah bilangan ganjil");: Dalam blok else, program aka
         8 adalah bilangan genap
         9 adalah bilangan ganjil
         10 adalah bilangan genap
+
+# PENJELASAN 3
+
+        import java.util.Scanner;
+        public class soal3 {
+            public static void main(String[] args) {
+                Scanner sc = new Scanner(System.in);
+                System.out.println("masukkan tanggal lahir anda = ");
+                int tanggal = sc.nextInt();
+                System.out.println("masukkan bulan lahir anda = ");
+                int bulan = sc.nextInt();
+        
+                String zodiac = "";
+        
+                switch (bulan){
+                    case 1:
+                        zodiac = (tanggal<=19) ? "capricorn" : "Aquarius";
+                        break;
+                    case 2:
+                        zodiac = (tanggal <=18) ? "Aquarius" : "Pisces";
+                        break;
+                    case 3:
+                        zodiac = (tanggal <=20) ? "Pisces" : "Aries";
+                        break;
+                    case 4:
+                        zodiac = (tanggal <=19) ? "Aries" : "Taurus";
+                        break;
+                    case 5:
+                        zodiac = (tanggal <=20) ? "Taurus" : "Gemini";
+                        break;
+                    case 6:
+                        zodiac = (tanggal <=20) ? "Gemini" : "Cancer";
+                        break;
+                    case 7:
+                        zodiac = (tanggal <=22) ? "Cancer" : "Leo";
+                        break;
+                    case 8:
+                        zodiac = (tanggal <=22) ? "Leo" : "Virgo";
+                        break;
+                    case 9:
+                        zodiac = (tanggal <=22) ? "Virgo" : "Libra";
+                        break;
+                    case 10:
+                        zodiac = (tanggal <=22) ? "Libra" : "Scorpio";
+                        break;
+                    case 11:
+                        zodiac = (tanggal <=21) ? "Scorpio" : "Sagitarius";
+                        break;
+                    case 12:
+                        zodiac = (tanggal <=21) ? "Sagitarius" : "Capricon";
+                        break;
+                    default:
+                        System.out.println("bulan yang anda sebutkan tidak valid");
+                }
+                System.out.println("ZODIAC KAMU ADALAH " + zodiac);
+        
+            }
+        }
+
+Scanner sc = new Scanner(System.in);: Ini adalah inisialisasi objek Scanner yang digunakan untuk membaca input dari pengguna melalui System.in.
+Mengambil input tanggal lahir dari pengguna:
+System.out.println("masukkan tanggal lahir anda = ");: Ini adalah pernyataan untuk meminta pengguna memasukkan tanggal lahir.
+int tanggal = sc.nextInt();: Ini adalah pernyataan yang menggunakan Scanner untuk membaca integer yang dimasukkan oleh pengguna dan menyimpannya dalam variabel tanggal.
+
+# Output
+
+        masukkan tanggal lahir anda = 
+        4
+        masukkan bulan lahir anda = 
+        4
+        ZODIAC KAMU ADALAH Aries
+
+
+# PENJELASAN 4
+
+int[] angka = new int[5];: Ini adalah deklarasi dan inisialisasi sebuah array dengan tipe data int yang disebut "angka." Array ini memiliki kapasitas untuk menyimpan 5 elemen. Array tersebut saat ini masih kosong (nilainya adalah 0).
+
+Mengisi array dengan nilai-nilai seperti gambar di bawah
+
+angka[0] = 10;: Elemen pertama dari array (indeks 0) diisi dengan nilai 10.
+angka[1] = 20;: Elemen kedua dari array (indeks 1) diisi dengan nilai 20.
+angka[2] = 30;: Elemen ketiga dari array (indeks 2) diisi dengan nilai 30.
+angka[3] = 40;: Elemen keempat dari array (indeks 3) diisi dengan nilai 40.
+angka[4] = 50;: Elemen kelima dari array (indeks 4) diisi dengan nilai 50.
+
+ int[] angka = new int[5]; // Array dengan 5 elemen
+
+        // Mengisi array dengan nilai-nilai
+        angka[0] = 10;
+        angka[1] = 20;
+        angka[2] = 30;
+        angka[3] = 40;
+        angka[4] = 50;
+
+memasukkan data 
+
+        int total = 0;
+        for (int i = 0; i < angka.length; i++) {
+            total += angka[i];
+
+            
+Program menggunakan loop for untuk mengiterasi melalui semua elemen dalam array. Loop ini berjalan sebanyak elemen yang ada dalam array, yang dapat diakses menggunakan angka.length.
+Selama iterasi, nilai dari setiap elemen array ditambahkan ke variabel total.
+Hasilnya, total dari semua elemen dalam array dihitung dan dicetak
+
+# Output
+
+        Elemen ke-0: 10
+        Elemen ke-1: 20
+        Elemen ke-2: 30
+        Elemen ke-3: 40
+        Elemen ke-4: 50
+        Total: 150
